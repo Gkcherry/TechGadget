@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0" />
+  <title>TechNova Gadgets 2025</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Segoe UI, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    body.light {
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    header {
+      position: relative;
+      height: 300px;
+      background: url('3620307.jpg') center/cover no-repeat;
+    }
+
+    header .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    header .title h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header .title p {
+      font-size: 1.2em;
+    }
+
+    nav {
+      background: #111;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    .toggle-btn {
+      background: #00bfff;
+      border: none;
+      padding: 5px 15px;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      color: #00bfff;
+      border-bottom: 2px solid #00bfff;
+      padding-bottom: 5px;
+    }
+
+    .gadget-card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .gadget-card h2 {
+      color: #00bfff;
+      margin-top: 0;
+    }
+
+    .gadget-card img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin: 15px 0;
+    }
+
+    .specs,
+    .price,
+    .rating,
+    .status {
+      margin: 8px 0;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #0077cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .footer {
+      background: #111;
+      color: #777;
+      font-size: 14px;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="title">
+      <h1>TechNova Gadgets</h1>
+      <p>Discover the Latest Tech (2024–2025)</p>
+    </div>
+  </header>
+
+  <nav>
+    <div>
+      <a href="#phones">Smart Phones</a>
+      <a href="#laptops">Laptops</a>
+      <a href="#tvs">TVs & etc.</a>
+    </div>
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Mode</button>
+  </nav>
+
+  <div class="container">
+
+    <!-- Smart Phones Section -->
+    <div id="phones">
+      <div class="section-title">Smart Phones</div>
+
+      <div class="gadget-card">
+        <h2>Samsung Galaxy S24 Ultra</h2>
+        <img src="https://via.placeholder.com/800x400?text=Galaxy+S24+Ultra" alt="Samsung Galaxy S24 Ultra">
+        <div class="specs"><strong>Specs:</strong> Snapdragon 8 Gen 3, 12GB RAM, up to 1TB storage, 6.8″ QHD+ AMOLED, 5000mAh battery</div>
+        <div class="price"><strong>Price:</strong> ₹81,247–₹83,899</div>
+        <div class="rating"><strong>Rating:</strong> ⭐4.7/5</div>
+        <div class="status"><strong>Availability:</strong> Amazon.in & Flipkart</div>
+        <a class="buy-btn" href="https://www.amazon.in/dp/B0CS5XW6TN" target="_blank">Buy Now</a>
+      </div>
+
+      <div class="gadget-card">
+        <h2>Apple iPhone 15 Pro Max</h2>
+        <img src="https://via.placeholder.com/800x400?text=iPhone+15+Pro+Max" alt="iPhone 15 Pro Max">
+        <div class="specs"><strong>Specs:</strong> A17 Pro, 12GB RAM, up to 1TB storage, 6.7″ OLED, 4500mAh battery</div>
+        <div class="price"><strong>Price:</strong> ₹1,59,900</div>
+        <div class="rating"><strong>Rating:</strong> ⭐4.8/5</div>
+        <div class="status"><strong>Availability:</strong> Flipkart, Amazon.in</div>
+        <a class="buy-btn" href="https://www.flipkart.com/search?q=iPhone+15+Pro+Max" target="_blank">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Laptops Section -->
+    <div id="laptops">
+      <div class="section-title">Laptops</div>
+
+      <div class="gadget-card">
+        <h2>MacBook Air M3</h2>
+        <img src="https://via.placeholder.com/800x400?text=MacBook+Air+M3" alt="MacBook Air M3">
+        <div class="specs"><strong>Specs:</strong> M3 chip, 8GB RAM, 256GB SSD, 13.6″ Retina, 18h battery</div>
+        <div class="price"><strong>Price:</strong> ₹1,14,900</div>
+        <div class="rating"><strong>Rating:</strong> ⭐4.8/5</div>
+        <div class="status"><strong>Availability:</strong> Amazon India</div>
+        <a class="buy-btn" href="https://www.amazon.in/s?k=MacBook+Air+M3" target="_blank">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- TVs Section -->
+    <div id="tvs">
+      <div class="section-title">TVs & etc.</div>
+
+      <div class="gadget-card">
+        <h2>Samsung 55″ Neo QLED 4K TV</h2>
+        <img src="https://via.placeholder.com/800x400?text=Samsung+55+Neo+QLED" alt="Samsung 55 Neo QLED">
+        <div class="specs"><strong>Specs:</strong> 4K Neo QLED, 120Hz, Smart OS, HDR</div>
+        <div class="price"><strong>Price:</strong> ₹79,999</div>
+        <div class="rating"><strong>Rating:</strong> ⭐4.6/5</div>
+        <div class="status"><strong>Availability:</strong> Amazon, Flipkart</div>
+        <a class="buy-btn" href="https://www.amazon.in/s?k=Samsung+Neo+QLED+TV" target="_blank">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">&copy; 2025 TechNova | All rights reserved</div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+    }
+  </script>
+</body>
+</html>
